@@ -174,14 +174,13 @@ class Profile extends UActiveRecord
 	public function behaviors()
 {
   return array(
-		'restAPI' => array('class' => '\rest\controller\Behavior'),
     'image' => array(
       'class' => 'ext.AttachmentBehavior.AttachmentBehavior',
       # Имя поля в БД для сохранения пути
       'attribute' => 'filename',//измените filename на указанное вами имя поля.
       # Изображение по умолчанию, если в базе путь не сохранён
-      'fallback_image' => 'images/users/no_avatar.png',
-      'path' => "images/users/:model/:id.:ext",
+      'fallback_image' => '/../images/users/no_avatar.png',
+      'path' => "/../images/users/:model/:id.:ext",
       'processors' => array(
         array(
           'class' => 'GDProcessor',
