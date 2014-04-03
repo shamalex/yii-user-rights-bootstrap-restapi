@@ -5192,3 +5192,15 @@ in Z:\home\cat.loc\www\index.php (13)
 in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
 in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
 in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 18:40:02 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 18:40:25 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 18:41:06 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
