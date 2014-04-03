@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Апр 03 2014 г., 14:53
+-- Время создания: Апр 03 2014 г., 18:43
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS `authassignment` (
 INSERT INTO `authassignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES
 ('Admin', '1', NULL, 'N;'),
 ('Authenticated', '2', NULL, 'N;'),
+('Authenticated', '4', NULL, 'N;'),
 ('Moderator', '3', NULL, 'N;');
 
 -- --------------------------------------------------------
@@ -138,7 +139,18 @@ INSERT INTO `tbl_profiles` (`user_id`, `lastname`, `firstname`, `birthday`, `fil
 (1, 'Admin', 'Administrator', '0000-00-00', ''),
 (2, 'Demo', 'Demo', '0000-00-00', ''),
 (3, 'shamshin', 'alex', '1985-09-11', ''),
-(4, 'shamshin', 'alex', '0000-00-00', '');
+(4, 'shamshin', 'alex', '0000-00-00', ''),
+(5, 'shamshin', 'alex', '2014-04-01', ''),
+(6, 'www', 'aaa', '2014-04-10', ''),
+(7, '', '', '2014-04-08', ''),
+(8, '', '', '2014-04-30', ''),
+(9, '', '', '2014-04-22', ''),
+(10, 'rgrg', '', '2014-04-30', ''),
+(11, 'www', '', '2014-04-22', ''),
+(12, 'Adminww', '', '2014-04-30', ''),
+(13, 'www', '', '2014-04-28', ''),
+(14, 'shamshin', '', '0000-00-00', ''),
+(15, 'shamshin', '', '2014-04-22', '');
 
 -- --------------------------------------------------------
 
@@ -173,7 +185,7 @@ CREATE TABLE IF NOT EXISTS `tbl_profiles_fields` (
 
 INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `field_size`, `field_size_min`, `required`, `match`, `range`, `error_message`, `other_validator`, `default`, `widget`, `widgetparams`, `position`, `visible`) VALUES
 (1, 'lastname', 'Last Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect Last Name (length between 3 and 50 characters).', '', '', '', '', 1, 3),
-(2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
+(2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 2, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
 (3, 'birthday', 'Birthday', 'DATE', 0, 0, 2, '', '', '', '', '0000-00-00', 'UWjuidate', '{"ui-theme":"redmond"}', 3, 2),
 (4, 'filename', 'Аватар', 'VARCHAR', 255, 0, 2, '', '', '', '', '', '', '', 0, 3);
 
@@ -188,18 +200,13 @@ CREATE TABLE IF NOT EXISTS `tbl_tovar` (
   `name` text NOT NULL,
   `price` int(5) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
 --
 -- Дамп данных таблицы `tbl_tovar`
 --
 
 INSERT INTO `tbl_tovar` (`id`, `name`, `price`) VALUES
-(2, 'Детские игрушки', 340),
-(3, 'Взрослые игрушки6', 444),
-(4, 'тестовій товар', 33),
-(5, 'game1', 22),
-(6, 'tovar by tester3', 43),
 (7, 'tov1', 5),
 (8, 'tov2', 33),
 (9, 'tov2', 33),
@@ -222,7 +229,7 @@ INSERT INTO `tbl_tovar` (`id`, `name`, `price`) VALUES
 CREATE TABLE IF NOT EXISTS `tbl_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
-  `password` varchar(128) NOT NULL,
+  `password` varchar(4) NOT NULL,
   `email` varchar(128) NOT NULL,
   `activkey` varchar(128) NOT NULL DEFAULT '',
   `createtime` int(10) NOT NULL DEFAULT '0',
@@ -234,17 +241,28 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
   UNIQUE KEY `email` (`email`),
   KEY `status` (`status`),
   KEY `superuser` (`superuser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Дамп данных таблицы `tbl_users`
 --
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1396525149, 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 0, 0, 1),
-(3, 'moderator', '3d801aa532c1cec3ee82d87a99fdf63f', 'shamshin@i.ua', '3b81f1cee79f9c280a7acef2810918c5', 1396161609, 1396166012, 1, 1),
-(4, 'tester', '098f6bcd4621d373cade4e832627b4f6', 'shamshin1@i.ua', 'b56cfb346a0011ff62937151c268af0d', 1396162638, 1396523548, 0, 1);
+(1, 'admin', '2123', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1396528833, 1, 1),
+(2, 'demo', '0', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 0, 0, 1),
+(3, 'moderator', '3', 'shamshin@i.ua', '3b81f1cee79f9c280a7acef2810918c5', 1396161609, 1396166012, 1, 1),
+(4, 'tester', '98', 'shamshin1@i.ua', 'b56cfb346a0011ff62937151c268af0d', 1396162638, 1396528937, 0, 1),
+(5, 'eeeeee', '0', 'ewfe@wef.ru', 'f9a46530f9b7717ee13ed5d6880a73aa', 1396529717, 1396529717, 0, 1),
+(6, 'temp', '3', 'wertergt@fe.ru', '389be75bd927c1a540ec12fd94b335c8', 1396529797, 1396529797, 0, 1),
+(7, 'ttttttt', '0', 'ewfffe@wef.ru', 'd730346c67426d63c29b8b1d4e0d7a01', 1396536470, 1396536470, 0, 1),
+(8, 'wwwww', '0', 'wqerwewr@ef.ru', 'a3a036b3e1686f4019dc151416051345', 1396536636, 1396536636, 0, 1),
+(9, 'ffffff', '0', 'ewwefe@wef.ru', 'be75acfeb369df674085e511c841238b', 1396536677, 1396536677, 0, 1),
+(10, 'rrrrrrr', 'dab5', 'wefewf@wef.ru', '441a03926239e80cdf5a9cd9e0a33853', 1396537916, 1396537916, 0, 1),
+(11, 'ggggggg', '8938', 'wqerweer@ef.ru', '8ede3299d0815a57be5cfdd46411fd67', 1396537961, 1396537961, 0, 1),
+(12, 'ihihihih', '8bfa', 'wqerwewer@ef.ru', 'bc616253603ec7bccad2bdf7f5326053', 1396538282, 1396538282, 0, 1),
+(13, 'ssssfffe', 'd05c', 'wqerewer@ef.ru', 'ec6057c08952d0b659ca5fb63c826a23', 1396538341, 1396538341, 0, 1),
+(14, 'vvvvdvd', '28cf', 'ewwfes@wef.ru', '021be4c9d5e5c9aad69a27bd8cc2845a', 1396538422, 1396538422, 0, 1),
+(15, 'vhfhfh', '9d84', 'fdgerg@ef.ru', '2b232aa1e773dbafa7bf8d7c40918f9d', 1396539625, 1396539625, 0, 1);
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
