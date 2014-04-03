@@ -5120,3 +5120,75 @@ Stack trace:
 REQUEST_URI=/user/images/users/no_avatar.png
 HTTP_REFERER=http://cat.loc/user/profile
 ---
+2014/04/03 15:42:57 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:43:02 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:43:06 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:43:11 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:43:21 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:43:58 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:44:16 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:45:20 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:45:40 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:45:52 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:48:34 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:50:38 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:50:55 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:52:15 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:53:11 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:55:17 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:56:28 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
+2014/04/03 15:56:37 [warning] [application] Не удалось присвоить небезопасный атрибут "filename" класса "Profile".
+in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
+in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
+in Z:\home\cat.loc\www\index.php (13)
