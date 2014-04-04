@@ -38,7 +38,7 @@ return array(
 				),
 			),
 		'user'=>array(
-		  'hash' => 'md5',
+		  'hash' => 'crc32',
 		  'sendActivationMail' => false,
 		  'loginNotActiv' => false,
 		  'activeAfterRegister' => true,
