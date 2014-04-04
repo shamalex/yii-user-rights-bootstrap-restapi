@@ -252,7 +252,7 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`) VALUES
-(18, 'admin', '86626759', 'shamshin@i.ua', 'a678d370', 1396595465, 1396595476, 0, 1),
+(1, 'admin', '86626759', 'shamshin@i.ua', 'a678d370', 1396595465, 1396595476, 1, 1),
 (19, 'demo', 'd8d72a10', 'demo@rambler.ru', '6b16e132', 1396595562, 1396595562, 0, 1);
 
 --

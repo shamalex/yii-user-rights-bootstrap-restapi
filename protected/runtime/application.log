@@ -5232,3 +5232,19 @@ in Z:\home\cat.loc\www\index.php (13)
 in Z:\home\cat.loc\www\protected\modules\user\components\UActiveRecord.php (29)
 in Z:\home\cat.loc\www\protected\modules\user\controllers\RegistrationController.php (41)
 in Z:\home\cat.loc\www\index.php (13)
+2014/04/04 11:50:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in Z:\home\cat.loc\www\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 Z:\home\cat.loc\www\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#1 Z:\home\cat.loc\www\framework\web\CController.php(1144): AssignmentController->accessRules()
+#2 Z:\home\cat.loc\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 Z:\home\cat.loc\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 Z:\home\cat.loc\www\framework\web\CController.php(291): CFilterChain->run()
+#5 Z:\home\cat.loc\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\cat.loc\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\cat.loc\www\framework\web\CWebApplication.php(141): CWebApplication->runController('rights')
+#8 Z:\home\cat.loc\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\cat.loc\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/rights
+HTTP_REFERER=http://cat.loc/tovar/admin
+---
